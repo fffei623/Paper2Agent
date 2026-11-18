@@ -1,0 +1,34 @@
+{
+  "module": "scanpy_workflow",
+  "agent_id": "/root/verify_scanpy_workflow",
+  "status": "partial_pass",
+  "source_bindings_reviewed": "Scanpy public read_10x_h5, preprocessing, PCA, neighbors, UMAP, Leiden, AnnData.write_h5ad; tutorial docs/tutorials/basics/clustering.ipynb",
+  "findings": [
+    "MCP wrapper calls real Scanpy APIs and exposes supported parameters.",
+    "Existing stdio acceptance passed tool inventory/schema, two repeated positive calls with 3 artifacts each, and missing-file error case.",
+    "Additional changed-parameter call with n_top_genes=100 and resolution=0.8 returned 1185x100 output; missing input raises FileNotFoundError.",
+    "Generated figure exists as umap_leiden.png. Tool return artifact path matches actual output.",
+    "No stable source commit recorded; Scanpy is a shallow checkout; baseline is a reduced paper-scope adaptation."
+  ],
+  "limitations": [
+    "No complete H5AD numerical comparison against an independently re-executed direct upstream oracle was performed by verifier.",
+    "Tool does not include a message/reference top-level return contract specified in verifier format.",
+    "Output directory per invocation is unique; old artifacts intentionally retained."
+  ],
+  "tested_files": {
+    "src/tools/scanpy_workflow.py": "5d0d90e7a6e3c4f5b09f4cec3f7eb356299217e572ebd8e99d4e68601392fe87",
+    "src/scanpy_pbmc_mcp.py": "6c4ea802baf513bc2d1c9666439c4dff46839af830787a4190146f898b8537c6"
+  },
+  "commands": [
+    {
+      "command": "verify_mcp_server.py --server ... --expected ... --cases ... --require-all-tools",
+      "exit": 0
+    },
+    {
+      "command": "Python direct wrapper call with n_top_genes=100,resolution=0.8 plus missing file",
+      "exit": 0
+    }
+  ],
+  "repairs": [],
+  "exclusions": []
+}

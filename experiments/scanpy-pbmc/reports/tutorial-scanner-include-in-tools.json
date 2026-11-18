@@ -1,0 +1,21 @@
+{
+  "scan_metadata": {
+    "repository": "scanpy",
+    "paper": "Reimagining research papers as interactive and reliable AI agents",
+    "scan_date": "2026-11-15",
+    "evaluated_source_files": 1,
+    "included_source_files": 1,
+    "success": true,
+    "explanation": "Reduced scope: one PBMC 1k v3 input and preprocessing/clustering workflow for learning Paper2MCP."
+  },
+  "tutorials": [
+    {
+      "path": "docs/tutorials/basics/clustering.ipynb",
+      "title": "Preprocessing and clustering",
+      "description": "Scanpy workflow covering 10x HDF5 reading, QC, filtering, normalization, HVG selection, PCA, neighbors, UMAP and Leiden.",
+      "type": "notebook",
+      "include_in_tools": true,
+      "reason_for_include_or_exclude": "Directly matches the paper's Scanpy preprocessing and clustering scope; PBMC 1k v3 input substitutes for the notebook's example data and is recorded as a scope adaptation."
+    }
+  ]
+}

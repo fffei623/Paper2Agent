@@ -1,0 +1,93 @@
+{
+  "success": true,
+  "mode": "calls",
+  "require_all_tools": true,
+  "server": "D:\\Agent\\paper2agent\\Paper2Agent-main\\experiments\\scanpy-pbmc\\src\\scanpy_pbmc_mcp.py",
+  "cwd": "D:\\Agent\\paper2agent\\Paper2Agent-main\\experiments\\scanpy-pbmc\\src",
+  "python": "C:\\Users\\\u3002\\AppData\\Local\\Temp\\scanpy-pbmc-venv\\Scripts\\python.exe",
+  "python_version": "3.14.7",
+  "fastmcp": "4.2.0",
+  "expected": [
+    "preprocess_and_cluster_10x"
+  ],
+  "actual": [
+    "preprocess_and_cluster_10x"
+  ],
+  "missing": [],
+  "unexpected": [],
+  "schemas": {
+    "preprocess_and_cluster_10x": {
+      "input": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "input_h5": {
+            "description": "Path to a 10x Genomics filtered feature-barcode HDF5 matrix",
+            "type": "string"
+          },
+          "output_dir": {
+            "description": "Directory where the H5AD, UMAP image, and summary will be written",
+            "type": "string"
+          },
+          "min_genes": {
+            "default": 100,
+            "description": "Minimum genes detected per cell; Scanpy filter_cells parameter",
+            "type": "integer"
+          },
+          "min_cells": {
+            "default": 3,
+            "description": "Minimum cells expressing each gene; Scanpy filter_genes parameter",
+            "type": "integer"
+          },
+          "n_top_genes": {
+            "default": 2000,
+            "description": "Maximum number of highly variable genes to retain",
+            "type": "integer"
+          },
+          "n_neighbors": {
+            "default": 10,
+            "description": "Number of neighbors used to construct the cell graph",
+            "type": "integer"
+          },
+          "resolution": {
+            "default": 0.5,
+            "description": "Leiden clustering resolution",
+            "type": "number"
+          },
+          "random_state": {
+            "default": 0,
+            "description": "Seed passed to Scanpy PCA, UMAP, and Leiden",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "input_h5",
+          "output_dir"
+        ]
+      },
+      "output": {
+        "additionalProperties": true,
+        "type": "object"
+      }
+    }
+  },
+  "cases": [
+    {
+      "name": "pbmc-reference-run-1",
+      "tool": "preprocess_and_cluster_10x",
+      "success": true,
+      "artifacts_checked": 3
+    },
+    {
+      "name": "pbmc-repeat-run",
+      "tool": "preprocess_and_cluster_10x",
+      "success": true,
+      "artifacts_checked": 3
+    },
+    {
+      "name": "missing-input-file",
+      "tool": "preprocess_and_cluster_10x",
+      "success": true
+    }
+  ]
+}
