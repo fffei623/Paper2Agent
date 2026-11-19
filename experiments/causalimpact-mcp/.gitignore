@@ -1,0 +1,12 @@
+﻿# 本地运行环境与临时文件
+CausalImpact-env/
+r-runtime/
+tmp/
+renv/library/
+renv/cache/
+
+# MCP 工具每次调用生成的临时产物
+tests/results/tool-runs/
+
+# 本地上游克隆（固定提交与运行所需源码已包含在交付 ZIP 中）
+repo/CausalImpact/

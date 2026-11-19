@@ -1,0 +1,100 @@
+{
+  "archive": "dist/CausalImpact-mcp.zip",
+  "sha256": "455ccdd2167a071800f9dec346ca6dd164c43723007a66d6397b271e9f3ba291",
+  "file_count": 23,
+  "files": [
+    {
+      "path": "CausalImpact-mcp/.Rprofile",
+      "sha256": "08654ee73bbfa9d016a10709f3589fea6a343a19b6539206ed2eabbac69001f6"
+    },
+    {
+      "path": "CausalImpact-mcp/LICENSE-CausalImpact",
+      "sha256": "eb3d7b5485466acbd81f2b496f595ab637d2792e268206b27d99e793bdb67549"
+    },
+    {
+      "path": "CausalImpact-mcp/renv/activate.R",
+      "sha256": "2f5506a7af49ac5fc9b4818d4b737fbf71865b37073d7082c5dd38c34f729418"
+    },
+    {
+      "path": "CausalImpact-mcp/renv/settings.json",
+      "sha256": "837ff9912231089c7aeb7b1ffa74a1a356dd1e43498c132010ddd985b30f529e"
+    },
+    {
+      "path": "CausalImpact-mcp/renv.lock",
+      "sha256": "60fee86b065512f44f8cb7061b628a5a0e2c32447b8775ac3ae8c3aa72bc3aa1"
+    },
+    {
+      "path": "CausalImpact-mcp/repo/CausalImpact/DESCRIPTION",
+      "sha256": "5739d1b26ec0e6e015d6c6dbc58a3bff4f3f6ee703453f064dbc786e293b30e0"
+    },
+    {
+      "path": "CausalImpact-mcp/repo/CausalImpact/inst/CITATION",
+      "sha256": "e00635e71af26cfc61d6229798a4b52c05bd02f3142e7d120104ec454f471360"
+    },
+    {
+      "path": "CausalImpact-mcp/repo/CausalImpact/LICENSE",
+      "sha256": "eb3d7b5485466acbd81f2b496f595ab637d2792e268206b27d99e793bdb67549"
+    },
+    {
+      "path": "CausalImpact-mcp/repo/CausalImpact/man/AsCausalImpact.Rd",
+      "sha256": "34f3308511cd93dab02f1e0ccae83765b82908a06e87a9361cb97490877db2d3"
+    },
+    {
+      "path": "CausalImpact-mcp/repo/CausalImpact/man/CausalImpact.Rd",
+      "sha256": "d7c5318f15f539b496d2d6e5330600caeebc2a5693a7f0054603c88f59dddd7f"
+    },
+    {
+      "path": "CausalImpact-mcp/repo/CausalImpact/man/CausalImpactMethods.Rd",
+      "sha256": "e4e0212283711c381e472e7947b7025b247c994e4ac724a38ee1efc1e05e0ff8"
+    },
+    {
+      "path": "CausalImpact-mcp/repo/CausalImpact/NAMESPACE",
+      "sha256": "7f6f255b9f0e158e58fc6860df2485a67f9b89505b9ae52ed2db0284af2aba5f"
+    },
+    {
+      "path": "CausalImpact-mcp/repo/CausalImpact/R/impact_analysis.R",
+      "sha256": "5921a542d5dee7a64d62480c29a90bcb1366b684baee8f2a9af1699d8188d809"
+    },
+    {
+      "path": "CausalImpact-mcp/repo/CausalImpact/R/impact_inference.R",
+      "sha256": "2dc08c3038561491369480e2a176a49234fc709099684a6de271554acf2c535d"
+    },
+    {
+      "path": "CausalImpact-mcp/repo/CausalImpact/R/impact_misc.R",
+      "sha256": "fc0fd315fbf4a137858fdbfc5b1c0592b717d154be9bfca79947bf0b33483ba1"
+    },
+    {
+      "path": "CausalImpact-mcp/repo/CausalImpact/R/impact_model.R",
+      "sha256": "1be514ffcc15eeb7c35fe9229826d4465bfc6296380424b7d05a8ac53d137a15"
+    },
+    {
+      "path": "CausalImpact-mcp/repo/CausalImpact/R/impact_plot.R",
+      "sha256": "63ba07d9d31509ef0b2fe82d6c01a2dfb48894ab9f1ad282b317fe2af6c897f8"
+    },
+    {
+      "path": "CausalImpact-mcp/src/causalimpact_mcp.py",
+      "sha256": "a07b82561b7c19447e381355a23e15fbad512e71c6494dcde91f97431e172674"
+    },
+    {
+      "path": "CausalImpact-mcp/src/r_scripts/analyze_causal_impact.R",
+      "sha256": "6b120ab23b1e933acc6f716282d42455134fe63a92d4b295394652317794b5a6"
+    },
+    {
+      "path": "CausalImpact-mcp/src/requirements.txt",
+      "sha256": "f6e368bcd81c1b5ceeb3ab5e08cdca3389549b2b1c9a18674fccb4f122e8ca82"
+    },
+    {
+      "path": "CausalImpact-mcp/src/tools/__init__.py",
+      "sha256": "2a72c0c3b6770264bd893aac64f29dc4af8425d9c60396005fe1ac5d2a2ad6af"
+    },
+    {
+      "path": "CausalImpact-mcp/src/tools/analyze_causal_impact.py",
+      "sha256": "397a02b2c25c8766f8d1eb569d70dafa808af4daf1eef9139e68a6c9e1cf9f95"
+    },
+    {
+      "path": "CausalImpact-mcp/USAGE.md",
+      "sha256": "da61be594fcf1ad38344956eb80f765bdd094b509e1a034565f17c01ecb49aaf"
+    }
+  ],
+  "validation_status": "candidate; functional stdio checks passed; documentation and MCP descriptions localized to Chinese; archive integrity verified"
+}

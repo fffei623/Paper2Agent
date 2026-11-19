@@ -1,0 +1,119 @@
+{
+  "success": true,
+  "mode": "calls",
+  "require_all_tools": true,
+  "server": "D:\\Agent\\paper2agent\\Paper2Agent-fffei623\\experiments\\causalimpact-mcp\\src\\causalimpact_mcp.py",
+  "cwd": "D:\\Agent\\paper2agent\\Paper2Agent-fffei623\\experiments\\causalimpact-mcp",
+  "python": "D:\\Agent\\paper2agent\\Paper2Agent-fffei623\\experiments\\causalimpact-mcp\\CausalImpact-env\\Scripts\\python.exe",
+  "python_version": "3.14.7",
+  "fastmcp": "4.0.3",
+  "expected": [
+    "analyze_causal_impact"
+  ],
+  "actual": [
+    "analyze_causal_impact"
+  ],
+  "missing": [],
+  "unexpected": [],
+  "schemas": {
+    "analyze_causal_impact": {
+      "input": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "data": {
+            "items": {
+              "items": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "pre_period": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array"
+          },
+          "post_period": {
+            "items": {
+              "type": "integer"
+            },
+            "type": "array"
+          },
+          "alpha": {
+            "default": 0.05,
+            "type": "number"
+          },
+          "model_args": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          },
+          "seed": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          },
+          "column_names": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "data",
+          "pre_period",
+          "post_period"
+        ]
+      },
+      "output": {
+        "additionalProperties": true,
+        "type": "object"
+      }
+    }
+  },
+  "cases": [
+    {
+      "name": "official-vignette-new-input",
+      "tool": "analyze_causal_impact",
+      "success": true,
+      "artifacts_checked": 2
+    },
+    {
+      "name": "reject-short-series",
+      "tool": "analyze_causal_impact",
+      "success": true
+    }
+  ]
+}

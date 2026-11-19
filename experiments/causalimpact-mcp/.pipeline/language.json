@@ -1,0 +1,28 @@
+{
+  "language": "r",
+  "requires_gpu": false,
+  "language_reason": "选定的公开接口通过 Python 调用 Rscript 加载并运行 CausalImpact R 包，因此采用 Paper2MCP 的 R 调用路径。",
+  "gpu_requirement": "none",
+  "gpu_reason": "所选 vignette 使用 R/BSTS 的 MCMC 计算，未发现 GPU 依赖。",
+  "cli_backend": "r",
+  "repository": "https://github.com/google/CausalImpact.git",
+  "commit": "0f5bf8d97cfb13321926c68b7eaeec74bb692b61",
+  "requested_filter": "CausalImpact 包、公开接口、测试和官方 vignette；首个任务聚焦于已知效果的合成示例。",
+  "route_override": null,
+  "evidence_paths": [
+    "repo/CausalImpact/DESCRIPTION",
+    "repo/CausalImpact/NAMESPACE",
+    "repo/CausalImpact/R/impact_analysis.R",
+    "repo/CausalImpact/R/impact_model.R",
+    "repo/CausalImpact/R/impact_inference.R",
+    "repo/CausalImpact/R/impact_plot.R",
+    "repo/CausalImpact/vignettes/CausalImpact.Rmd",
+    "repo/CausalImpact/tests/testthat/test-impact-analysis.R",
+    "repo/CausalImpact/tests/CausalImpact_import_test.R"
+  ],
+  "runtime_status": "installed_and_vignette_and_mcp_acceptance_passed",
+  "r_version": "4.6.2",
+  "renv_version": "1.3.1",
+  "python_version": "3.14.7",
+  "fastmcp_version": "4.0.3"
+}

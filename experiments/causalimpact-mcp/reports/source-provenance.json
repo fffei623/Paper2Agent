@@ -1,0 +1,16 @@
+{
+    "repository":  "https://github.com/google/CausalImpact.git",
+    "commit":  "0f5bf8d97cfb13321926c68b7eaeec74bb692b61",
+    "package_version":  "1.4.1",
+    "install_source":  "repo/CausalImpact (local checkout at pinned commit)",
+    "r_version":  "4.6.2",
+    "renv_version":  "1.3.1",
+    "source_file_sha256":  {
+                               "repo\\CausalImpact\\R\\impact_model.R":  "1be514ffcc15eeb7c35fe9229826d4465bfc6296380424b7d05a8ac53d137a15",
+                               "repo\\CausalImpact\\R\\impact_plot.R":  "63ba07d9d31509ef0b2fe82d6c01a2dfb48894ab9f1ad282b317fe2af6c897f8",
+                               "repo\\CausalImpact\\DESCRIPTION":  "5739d1b26ec0e6e015d6c6dbc58a3bff4f3f6ee703453f064dbc786e293b30e0",
+                               "repo\\CausalImpact\\NAMESPACE":  "7f6f255b9f0e158e58fc6860df2485a67f9b89505b9ae52ed2db0284af2aba5f",
+                               "repo\\CausalImpact\\R\\impact_inference.R":  "2dc08c3038561491369480e2a176a49234fc709099684a6de271554acf2c535d",
+                               "repo\\CausalImpact\\R\\impact_analysis.R":  "5921a542d5dee7a64d62480c29a90bcb1366b684baee8f2a9af1699d8188d809"
+                           }
+}

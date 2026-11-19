@@ -1,0 +1,10 @@
+{
+  "package_version": "1.4.1",
+  "vignette_reference_average_effect": 10.5100004956836,
+  "mcp_average_effect": 10.51,
+  "absolute_difference": 4.956836008318533e-07,
+  "average_effect_agrees_with_seeded_reference_within_0_5": true,
+  "known_pointwise_effect_10_inside_mcp_interval": true,
+  "known_cumulative_effect_300_inside_mcp_interval": true,
+  "interpretation_limit": "One seeded synthetic example checks this run only; it does not establish interval coverage or causal validity."
+}
